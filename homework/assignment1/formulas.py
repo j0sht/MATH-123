@@ -2,7 +2,7 @@ def sumToN(n):
     return (n*(n+1)) // 2
 
 def evenSum(n):
-    return n*(n+1)
+    return 2 * sumToN(n)
 
 def oddSum(n):
     return sumToN(2*n) - evenSum(n)
