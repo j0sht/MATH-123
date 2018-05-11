@@ -16,6 +16,13 @@ def evenSquares(n):
 def oddSquares(n):
     return sumSquares(2*n) - evenSquares(n)
 
-# Formula for Q1c
-def formula(n):
+# Formula for Q1c (n = 250)
+def q1b():
+    return 3 * (sumToN(333) - sumToN(33))
+
+def q1c(n):
     return oddSquares(n) - evenSquares(n)
+
+if __name__ == "__main__":
+    print("102 + 105 + 108 + ... + 999 =", q1b())
+    print("1^2 - 2^2 + 3^2 - 4^2 + 5^2 - 6^2 + ... + 499^2 - 500^2 =", q1c(250))
