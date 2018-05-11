@@ -19,6 +19,12 @@ def oddSquares(n):
 def sumCubes(n):
     return ((n**2)*((n+1)**2)) // 4 # same as [sumToN(n)]^2 (question 2)
 
+def evenCubes(n):
+    return 8 * sumCubes(n)
+
+def oddCubes(n):
+    return sumCubes(2*n) - evenCubes(n)
+
 def q1b():
     return 3 * (sumToN(333) - sumToN(33))
 
